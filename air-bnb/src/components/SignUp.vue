@@ -25,8 +25,8 @@
       </div>
       <button type="submit">Sign Up</button>
     </form>
-    <div @click.prevent=openLogin id="login_btn">
-      <P>Back to Login</P>
+    <div @click.prevent="openLogin" id="login_btn">
+      <p>Back to Login</p>
     </div>
   </div>
 </template>
@@ -79,13 +79,15 @@ export default {
 
 <style scoped>
 body {
-  background: linear-gradient(120deg, #f093fb, #f5576c);
+  margin: 0;
+  padding: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdug5UYte7qy1r2le8t8DweKJDNTjZ_9kINw&s') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .signup-container {
@@ -93,14 +95,13 @@ body {
   margin: 50px auto;
   padding: 30px;
   border-radius: 12px;
-  background: linear-gradient(145deg, #ffffff, #f0f0f0);
-  box-shadow: 20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
   text-align: center;
-  color: #333;
+  color: #2c3e50;
   font-size: 24px;
 }
 
@@ -111,7 +112,7 @@ h2 {
 label {
   display: block;
   margin-bottom: 8px;
-  color: #444;
+  color: #34495e;
   font-weight: bold;
 }
 
@@ -119,10 +120,9 @@ input {
   width: 100%;
   padding: 12px 15px;
   margin-bottom: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #f7f7f7;
-  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ecf0f1;
   font-size: 16px;
 }
 
@@ -132,20 +132,21 @@ button {
   margin-top: 10px;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(145deg, #f093fb, #f5576c);
+  background: linear-gradient(145deg, #27ae60, #2ecc71);
   color: white;
   font-size: 18px;
   cursor: pointer;
   transition: background 0.3s ease;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button:hover {
-  background: linear-gradient(145deg, #f5576c, #f093fb);
+  background: linear-gradient(145deg, #2ecc71, #27ae60);
 }
 
 #login_btn {
   cursor: pointer;
   text-align: center;
+  color: #2980b9;
+  font-weight: bold;
 }
 </style>
