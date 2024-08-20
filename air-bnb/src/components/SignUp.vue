@@ -49,7 +49,7 @@ export default {
       try {
         const response = await axios.post('https://localhost:5001/User', {
           name: this.username,
-          email: this.password,
+          email: this.email,
           password: this.password,
           age: this.age
         })
