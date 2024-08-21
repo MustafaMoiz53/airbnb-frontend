@@ -41,8 +41,8 @@ export default {
     async authentication() {
       try {
         const url = this.isAdmin 
-          ? `https://localhost:5001/Admin/Authentication?email=${this.userEmail}&password=${this.password}`
-          : `https://localhost:5001/User/Authentication?email=${this.userEmail}&password=${this.password}`;
+          ?`https://localhost:5001/Admin/Authentication?email=${this.userEmail}&password=${this.password}`
+          :`https://localhost:5001/User/Authentication?email=${this.userEmail}&password=${this.password}`;
 
         const response = await axios.get(url);
         console.log(response.data);
